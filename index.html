@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Services</title>
+
+    <!-- Material UI Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #2b3a42;
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0;
+            padding-top: 40px;
+        }
+
+        .logo {
+            width: 240px;
+            height: auto;
+            margin-bottom: 20px;
+            animation: fadeIn 1.5s ease forwards;
+
+            display: block;
+            /* Helps in removing extra space below the image if it's inline */
+
+        }
+
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        .select-text {
+            font-size: 1.3em;
+            margin-bottom: 25px;
+            opacity: 0.9;
+            animation: fadeIn 2s ease forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card-container {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            align-items: stretch;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 10px;
+            animation: fadeIn 2s ease forwards 0.5s;
+        }
+
+        .card {
+            background-color: #3a3a3a;
+            padding: 25px;
+            border-radius: 12px;
+            flex: 1;
+            min-width: 250px;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 0 18px rgba(255, 255, 255, 0.25);
+        }
+
+        .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+            font-size: 1.6em;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .card button {
+            background-color: #ffffff;
+            color: #2e2e2e;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1em;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .card button:hover {
+            background-color: #dcdcdc;
+        }
+
+        @media (max-width: 900px) {
+            .card-container {
+                flex-direction: column;
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="https://bi-oss.co.za/BadgeWhite.png" alt="Logo" class="logo">
+
+    <h1>British International Colleges and Schools Online Services</h1>
+
+    <div class="select-text">Select your portal</div>
+
+    <div class="card-container">
+
+        <!-- Student Portal -->
+        <div class="card">
+            <span class="material-symbols-rounded icon">school</span>
+            <h2>Student Portal</h2>
+            <p>Registered BIC and BIDC students can log in to access their academic information and resources.</p>
+            <button onclick="window.open('https://student.bi-oss.co.za', '_blank')">Login</button>
+        </div>
+
+        <!-- Parent Portal -->
+        <div class="card">
+            <span class="material-symbols-rounded icon">family_restroom</span>
+            <h2>Parent Portal</h2>
+            <p>Parents of registered BIC or BIDC students can log in to view academic progress and school updates.</p>
+            <button onclick="window.open('https://parent.bi-oss.co.za', '_blank')">Login</button>
+        </div>
+
+        <!-- Private Candidate Portal -->
+        <div class="card">
+            <span class="material-symbols-rounded icon">assignment</span>
+            <h2>Private Candidate Portal</h2>
+            <p>This portal is for non‑registered students who wish to write Cambridge examinations as a Private
+                Candidate through BIC.</p>
+            <small style="opacity: 0.8; display: block; margin-bottom: 15px;">
+                All private candidate entries must be processed online.
+            </small>
+            <button onclick="window.open('https://privatecandidate.bi-oss.co.za', '_blank')">Login</button>
+        </div>
+
+    </div>
+
+    <div></div>
+    <div></div>
+    <div style="height: 100px;"></div>
+</body>
+
+</html>
