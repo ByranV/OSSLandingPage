@@ -57,13 +57,6 @@
 
         /* ---------- Header ---------- */
         .bic-header { position: sticky; top: 0; z-index: 990; box-shadow: 0 2px 10px rgba(10, 20, 35, .25); }
-        .bic-topbar { background: var(--navy-deep); color: #c9d5e3; font-size: .85rem; }
-        .bic-topbar .container { display: flex; align-items: center; gap: 22px; min-height: 36px; }
-        .bic-topbar a { color: inherit; display: inline-flex; align-items: center; gap: 6px; padding: 6px 0; }
-        .bic-topbar a:hover { color: #fff; }
-        .bic-topbar .material-icons { font-size: 16px; }
-        .bic-topbar-right { margin-left: auto; display: inline-flex; align-items: center; gap: 18px; }
-        .bic-social svg { width: 18px; height: 18px; fill: currentColor; display: block; }
 
         .bic-nav { background: var(--navy); }
         .bic-nav .container { display: flex; align-items: center; justify-content: space-between; height: 76px; }
@@ -159,11 +152,7 @@
             .bic-brand img { height: 48px; }
         }
         @media (max-width: 600px) {
-            .bic-topbar .container { gap: 14px; font-size: .8rem; }
             .bic-brand span { font-size: 1rem; }
-        }
-        @media (max-width: 420px) {
-            .bic-topbar a[href^="mailto"] { display: none; }
         }
         @media (prefers-reduced-motion: reduce) {
             * { transition-duration: .01ms !important; }
@@ -173,16 +162,6 @@
 
 <body>
     <header class="bic-header">
-        <div class="bic-topbar">
-            <div class="container">
-                <a href="tel:+27117067775"><i class="material-icons" aria-hidden="true">phone</i>+27 11 706-7775</a>
-                <a href="mailto:info@bicollege.co.za"><i class="material-icons" aria-hidden="true">email</i>info@bicollege.co.za</a>
-                <span class="bic-topbar-right">
-                    <a class="bic-social" href="https://www.facebook.com/profile.php?id=100064210742033" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.56 9.88v-6.99H7.9V12h2.54V9.8c0-2.5 1.49-3.89 3.78-3.89 1.09 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56V12h2.78l-.44 2.89h-2.34v6.99A10 10 0 0 0 22 12z"/></svg></a>
-                    <a class="bic-social" href="https://www.instagram.com/british_international_college/?hl=en" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></a>
-                </span>
-            </div>
-        </div>
         <nav class="bic-nav" aria-label="Main">
             <div class="container">
                 <span class="bic-brand"><img src="BadgeWhite.png" alt="" width="240" height="293"><span>British International Colleges and Schools</span></span>
