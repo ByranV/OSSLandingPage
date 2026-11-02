@@ -140,10 +140,9 @@
 
         /* ---------- Footer ---------- */
         .bic-footer { background: var(--navy-deep); color: #b9c8db; font-size: .86rem; padding: 16px 0; }
-        .bic-footer .container { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; }
-        .bic-foot-links { display: inline-flex; flex-wrap: wrap; gap: 6px 20px; }
-        .bic-footer a { color: inherit; }
-        .bic-footer a:hover { color: #fff; text-decoration: underline; }
+        .bic-footer .container { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; }
+        .bic-foot-logos { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+        .bic-foot-logos img { display: block; width: auto; height: 56px; padding: 6px; background: #fff; border-radius: 4px; }
 
         /* ---------- Responsive ---------- */
         @media (max-width: 992px) {
@@ -214,9 +213,9 @@
     <footer class="bic-footer">
         <div class="container">
             <span>&copy; British International College (Pty) Ltd.</span>
-            <span class="bic-foot-links">
-                <a href="tel:+27117067775">+27 11 706-7775</a>
-                <a href="mailto:info@bicollege.co.za">info@bicollege.co.za</a>
+            <span class="bic-foot-logos">
+                <img src="acesa_logo.png" alt="ACESA: Association of Cambridge Educators of Southern Africa" width="200" height="53">
+                <img src="cambridge_associate_logo.png" alt="Cambridge Assessment International Education: Cambridge Associate" width="600" height="175">
             </span>
         </div>
     </footer>
